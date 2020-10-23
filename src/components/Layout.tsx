@@ -29,10 +29,30 @@ const Layout: React.FC<Props> = (props) => {
       </main>
       <footer>&copy; {siteTitle}</footer>
       <style jsx>{`
-        （ここに CSS を記述します）
-      `}</style>
-      <style jsx global>{`
-        （ここに CSS を記述します）
+        .page {
+          padding: 2em 1em;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 4em;
+        }
+        .site-title a {
+          color: inherit;
+          text-decoration: none;
+        }
+        footer {
+          margin-top: 4em;
+          padding-top: 2em;
+          padding-bottom: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       `}</style>
     </div>
   )
